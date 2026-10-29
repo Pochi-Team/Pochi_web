@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Equipo — Pochi</title>
+<script>
+/* Modo sol/luna guardado: se aplica antes de pintar para que no parpadee. */
+(function(){ var m = 'sol'; try{ m = localStorage.getItem('pochi_modo') || 'sol'; }catch(e){}
+  document.documentElement.setAttribute('data-modo', m === 'luna' ? 'luna' : 'sol');
+  document.documentElement.classList.add('js'); })();
+</script>
+<meta name="description" content="El equipo de estudiantes detrás de Pochi.">
+<meta name="theme-color" content="#0f2a5c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500;700&family=Lexend:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/comun.css">
+<link rel="stylesheet" href="css/equipo.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav-row">
+    <a href="index.html#intro" class="brand" data-intro aria-label="Inicio: Colegio Capouilliez y Pochi">
+      <img src="Recursos/logo_header.png" alt="Colegio Capouilliez | Pochi" width="663" height="128">
+    </a>
+    <nav class="links" id="navLinks" aria-label="Principal"><a href="index.html">Inicio</a><a href="equipo.html" aria-current="page">Equipo</a><a href="juego.html">Juego</a><a href="prototipo.html">Prototipo</a></nav>
+    <div class="nav-tools">
+      <button class="mode-toggle" id="modeToggle" type="button" aria-pressed="false" aria-label="Cambiar a modo luna" title="Cambiar a modo luna">
+        <span class="knob" aria-hidden="true"></span>
+        <span class="ico sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.6"/><path d="M11 1h2v3.2h-2zM11 19.8h2V23h-2zM1 11h3.2v2H1zM19.8 11H23v2h-3.2zM4.1 5.5l1.4-1.4 2.3 2.3-1.4 1.4zM16.2 17.6l1.4-1.4 2.3 2.3-1.4 1.4zM4.1 18.5l2.3-2.3 1.4 1.4-2.3 2.3zM16.2 6.4l2.3-2.3 1.4 1.4-2.3 2.3z"/></svg></span>
+        <span class="ico moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z"/></svg></span>
+      </button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="contenido">
+<div class="wrap">
+  <section class="page-head">
+    <div class="reveal">
+      <span class="eyebrow">El equipo</span>
+      <h1>21 estudiantes detrás de un robot completo.</h1>
+      <p class="lead">Pochi se construyó entre 21 estudiantes que se repartieron el trabajo real del proyecto: electrónica, programación, diseño del cuerpo, pruebas y la experiencia del paciente.</p>
+      <div class="team-stats"><span><b>21</b>integrantes</span><span><b>2</b>cerebros: Raspberry Pi 5 y ESP32</span><span><b>4</b>compartimentos de color</span></div>
+    </div>
+  </section>
+
+  <section class="section tight" style="padding-top:0" aria-label="Integrantes">
+    <div class="team-grid"><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/victor_arevalo.png" alt="Foto de Victor Arévalo" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Victor Arévalo</h3><span class="member-role">Presidente</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/esteban_bobadilla.png" alt="Foto de Esteban Bobadilla" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Esteban Bobadilla</h3><span class="member-role">Vicepresidente</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/jose_maldonado.png" alt="Foto de José Maldonado" width="440" height="528" loading="lazy"></figure><h3 class="member-name">José Maldonado</h3><span class="member-role">Tesorero</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/sussel_escobar.png" alt="Foto de Sussel Escobar" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Sussel Escobar</h3><span class="member-role">Secretaria</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/miguel_garcia.png" alt="Foto de Miguel García" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Miguel García</h3><span class="member-role">Ensamblaje</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/douglas_minchez.png" alt="Foto de Douglas Mínchez" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Douglas Mínchez</h3><span class="member-role">Diseño y ensamblaje</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/daniel_ramos.png" alt="Foto de Daniel Ramos" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Daniel Ramos</h3><span class="member-role">Ensamblaje</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/marcos_bobadilla.png" alt="Foto de Marcos Bobadilla" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Marcos Bobadilla</h3><span class="member-role">Programación y electrónica</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/mario_lopez.png" alt="Foto de Mario López" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Mario López</h3><span class="member-role">Programación</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/catherine_alvarez.png" alt="Foto de Catherine Alvarez" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Catherine Alvarez</h3><span class="member-role">Diseño, creatividad y mercadeo</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/juan_ignacio_roca.png" alt="Foto de Juan Ignacio Roca" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Juan Ignacio Roca</h3><span class="member-role">Ensamblaje</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/matias_coronado.png" alt="Foto de Matías Coronado" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Matías Coronado</h3><span class="member-role">Ensamblaje</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/teresa_sandoval.png" alt="Foto de Teresa Sandoval" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Teresa Sandoval</h3><span class="member-role">Diseño, creatividad y mercadeo</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/nelson_tzunun.png" alt="Foto de Nelson Tzunún" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Nelson Tzunún</h3><span class="member-role">Ensamblaje</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/abner_dubon.png" alt="Foto de Abner Dubón" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Abner Dubón</h3><span class="member-role">Programación</span></article><article class="member reveal"><figure class="m-photo"><img src="Recursos/fotos/julio_ordonez.png" alt="Foto de Julio Ordoñez" width="440" height="528" loading="lazy"></figure><h3 class="member-name">Julio Ordoñez</h3><span class="member-role">Diseño</span></article><article class="member reveal"><figure class="m-photo m-sil"><svg viewBox="0 0 440 528" aria-hidden="true"><defs><linearGradient id="sf1" x1="0" y1="0" x2="0" y2="1"><stop offset=".72" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="sm1"><rect width="440" height="528" fill="url(#sf1)"/></mask></defs><g mask="url(#sm1)"><ellipse cx="220" cy="214" rx="62" ry="78"/><path d="M187 270H253V322C283 332 315 340 345 346C379 353 391 368 397 394L405 448V528H35V448L43 394C49 368 61 353 95 346C125 340 157 332 187 322Z"/></g></svg></figure><h3 class="member-name">Esteban Padilla</h3><span class="member-role">Ensamblaje</span></article><article class="member reveal"><figure class="m-photo m-sil"><svg viewBox="0 0 440 528" aria-hidden="true"><defs><linearGradient id="sf2" x1="0" y1="0" x2="0" y2="1"><stop offset=".72" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="sm2"><rect width="440" height="528" fill="url(#sf2)"/></mask></defs><g mask="url(#sm2)"><ellipse cx="220" cy="214" rx="62" ry="78"/><path d="M187 270H253V322C283 332 315 340 345 346C379 353 391 368 397 394L405 448V528H35V448L43 394C49 368 61 353 95 346C125 340 157 332 187 322Z"/></g></svg></figure><h3 class="member-name">Javier Padilla</h3><span class="member-role">Ensamblaje</span></article><article class="member reveal"><figure class="m-photo m-sil"><svg viewBox="0 0 440 528" aria-hidden="true"><defs><linearGradient id="sf3" x1="0" y1="0" x2="0" y2="1"><stop offset=".72" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="sm3"><rect width="440" height="528" fill="url(#sf3)"/></mask></defs><g mask="url(#sm3)"><ellipse cx="220" cy="214" rx="62" ry="78"/><path d="M187 270H253V322C283 332 315 340 345 346C379 353 391 368 397 394L405 448V528H35V448L43 394C49 368 61 353 95 346C125 340 157 332 187 322Z"/></g></svg></figure><h3 class="member-name">Juan Esteban Rangel</h3><span class="member-role">Cooperador</span></article><article class="member reveal"><figure class="m-photo m-sil"><svg viewBox="0 0 440 528" aria-hidden="true"><defs><linearGradient id="sf4" x1="0" y1="0" x2="0" y2="1"><stop offset=".72" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="sm4"><rect width="440" height="528" fill="url(#sf4)"/></mask></defs><g mask="url(#sm4)"><ellipse cx="220" cy="214" rx="62" ry="78"/><path d="M187 270H253V322C283 332 315 340 345 346C379 353 391 368 397 394L405 448V528H35V448L43 394C49 368 61 353 95 346C125 340 157 332 187 322Z"/></g></svg></figure><h3 class="member-name">Diego Urrutia</h3><span class="member-role">Cooperador</span></article><article class="member reveal"><figure class="m-photo m-sil"><svg viewBox="0 0 440 528" aria-hidden="true"><defs><linearGradient id="sf5" x1="0" y1="0" x2="0" y2="1"><stop offset=".72" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="sm5"><rect width="440" height="528" fill="url(#sf5)"/></mask></defs><g mask="url(#sm5)"><ellipse cx="220" cy="214" rx="62" ry="78"/><path d="M187 270H253V322C283 332 315 340 345 346C379 353 391 368 397 394L405 448V528H35V448L43 394C49 368 61 353 95 346C125 340 157 332 187 322Z"/></g></svg></figure><h3 class="member-name">Luis Tzul</h3><span class="member-role">Cooperador</span></article></div>
+  </section>
+
+  <section class="section tight" aria-labelledby="t-por-que">
+    <div class="card pad why reveal">
+      <span class="eyes eyes-md"><span class="eye"><i></i></span><span class="eye"><i></i></span></span>
+      <figure class="quote">
+        <span class="eyebrow" id="t-por-que">La frase que nos caracteriza</span>
+        <blockquote>“Ninguno de nosotros es tan inteligente como todos nosotros juntos.”</blockquote>
+        <figcaption>— Ken Blanchard</figcaption>
+      </figure>
+    </div>
+  </section>
+
+    <section class="section tight" aria-labelledby="t-colegio">
+    <div class="school-feature reveal">
+      <div class="sf-top">
+        <span class="sf-kicker">Hecho en Guatemala</span>
+        <img src="Recursos/logo_header.png" alt="Colegio Capouilliez | Pochi" width="663" height="128" loading="lazy">
+      </div>
+      <h2 id="t-colegio">Desarrollado por estudiantes de Bachillerato en Ciencias y Letras del <span>Colegio Capouilliez</span></h2>
+      <div class="sf-bottom">
+        <p>Somos estudiantes preuniversitarios. Pochi nació en las aulas del colegio: un proyecto de ingeniería real, diseñado, construido y programado por nosotros.</p>
+        <a class="btn btn-light" href="https://www.capouilliez.edu.gt" target="_blank" rel="noopener">Visitar el sitio del colegio <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3 19.9 12l-6.7 6.7-1.4-1.4 4.3-4.3H4v-2h12.1l-4.3-4.3z"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight" aria-label="Más sobre Pochi">
+    <div class="next-grid"><a class="card next-card reveal" href="index.html"><span class="kicker">Inicio</span><h3>Qué es Pochi</h3><p>El resumen del proyecto en un minuto.</p><span class="go">Ir al inicio →</span></a><a class="card next-card reveal" href="prototipo.html"><span class="kicker">Prototipo</span><h3>Cómo está construido</h3><p>Arquitectura, hardware, la interfaz real y los videos técnicos.</p><span class="go">Ver el prototipo →</span></a><a class="card next-card reveal" href="juego.html"><span class="kicker">Juego</span><h3>El reto completo: 5 laberintos</h3><p>Más grandes, más engañosos y con niebla en los últimos niveles.</p><span class="go">Jugar →</span></a></div>
+  </section>
+</div>
+</main>
+<footer class="site-foot">
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <div class="row"><span class="eye-screen"><span class="eyes eyes-sm"><span class="eye"><i></i></span><span class="eye"><i></i></span></span></span>POCHI</div>
+      <p>Robot asistente de medicamentos para adultos mayores: busca, pregunta, entrega y confirma.</p>
+    </div>
+    <div class="foot-side">
+      <div class="foot-contact"><span class="foot-label">Contacto del equipo</span><a class="foot-mail copy-mail" href="mailto:equipopochi@duck.com" data-copy="equipopochi@duck.com" title="Clic para copiar el correo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zm2 2v.5l7 4.5 7-4.5V7zm0 2.9V17h14V9.9l-7 4.5z"/></svg><span>equipopochi@duck.com</span></a></div>
+      <nav class="foot-links" aria-label="Pie de página"><a href="index.html">Inicio</a><a href="equipo.html" aria-current="page">Equipo</a><a href="juego.html">Juego</a><a href="prototipo.html">Prototipo</a></nav>
+    </div>
+    <p class="foot-school">Proyecto desarrollado por estudiantes preuniversitarios de Bachillerato en Ciencias y Letras del <a href="https://www.capouilliez.edu.gt" target="_blank" rel="noopener">Colegio Capouilliez</a>, Guatemala.</p>
+  </div>
+</footer>
+<script>
+/* ==================================================================
+   JS común de todas las páginas: modo sol/luna, menú móvil, header
+   que se encoge al bajar, botones que marcan el clic,
+   efecto de escala al hacer scroll y reproductores de video.
+   ================================================================== */
+(function(){
+  'use strict';
+  var reduceMotion = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+  /* ---------- modo sol / luna ----------
+     El modo se aplica antes de pintar (script en <head>); aquí solo se
+     cambia y se guarda para que se mantenga en todas las páginas. */
+  var modeBtn = document.getElementById('modeToggle');
+  function paintModeBtn(){
+    if(!modeBtn){ return; }
+    var luna = document.documentElement.getAttribute('data-modo') === 'luna';
+    modeBtn.setAttribute('aria-pressed', luna ? 'true' : 'false');
+    modeBtn.setAttribute('aria-label', luna ? 'Modo luna activo. Cambiar a modo sol' : 'Modo sol activo. Cambiar a modo luna');
+    modeBtn.setAttribute('title', luna ? 'Cambiar a modo sol' : 'Cambiar a modo luna');
+  }
+  if(modeBtn){
+    paintModeBtn();
+    modeBtn.addEventListener('click', function(){
+      var luna = document.documentElement.getAttribute('data-modo') !== 'luna';
+      document.documentElement.setAttribute('data-modo', luna ? 'luna' : 'sol');
+      try{ localStorage.setItem('pochi_modo', luna ? 'luna' : 'sol'); }catch(e){}
+      paintModeBtn();
+    });
+  }
+
+  /* ---------- correo del equipo: clic = copiar al portapapeles ----------
+     Copia la dirección para pegarla donde se quiera y muestra
+     "Copiado en portapapeles" abajo, al centro de la pantalla. */
+  var toast = null, toastT = 0;
+  function showToast(el, txt){
+    if(!toast){
+      toast = document.createElement('div');
+      toast.className = 'copy-toast';
+      toast.setAttribute('role', 'status');
+      toast.setAttribute('aria-live', 'polite');
+      document.body.appendChild(toast);
+    }
+    toast.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 16.2 5.3 12l-1.4 1.4 5.6 5.6L20.1 8.4 18.7 7z"/></svg><span>' + txt + '</span>';
+    toast.classList.remove('show');
+    void toast.offsetWidth;
+    toast.classList.add('show');
+    el.classList.add('copied');
+    clearTimeout(toastT);
+    toastT = setTimeout(function(){ toast.classList.remove('show'); el.classList.remove('copied'); }, 2200);
+  }
+  function copyText(txt){
+    if(navigator.clipboard && window.isSecureContext){
+      return navigator.clipboard.writeText(txt).then(function(){ return true; }, function(){ return legacyCopy(txt); });
+    }
+    return Promise.resolve(legacyCopy(txt));
+  }
+  function legacyCopy(txt){
+    var ta = document.createElement('textarea');
+    ta.value = txt; ta.setAttribute('readonly', '');
+    ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none';
+    document.body.appendChild(ta); ta.select();
+    var ok = false; try{ ok = document.execCommand('copy'); }catch(e){}
+    document.body.removeChild(ta);
+    return ok;
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('[data-copy]') : null;
+    if(!a){ return; }
+    e.preventDefault();
+    var txt = a.getAttribute('data-copy');
+    copyText(txt).then(function(ok){
+      showToast(a, ok ? 'Copiado en portapapeles' : 'Copia: ' + txt);
+    });
+  });
+  /* ---------- botones: el clic deja marcado el color un momento ---------- */
+  document.addEventListener('click', function(e){
+    var b = e.target.closest ? e.target.closest('.btn') : null;
+    if(!b){ return; }
+    b.classList.add('pressed');
+    setTimeout(function(){ b.classList.remove('pressed'); }, 450);
+  }, true);
+
+  /* ---------- menú móvil ---------- */
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  function closeMenu(){
+    if(links){ links.classList.remove('open'); }
+    if(toggle){ toggle.setAttribute('aria-expanded','false'); }
+  }
+  if(toggle && links){
+    toggle.addEventListener('click', function(){
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeMenu(); } });
+  }
+
+  /* ---------- header: grande arriba, se encoge al bajar ---------- */
+  var hdr = document.querySelector('header.site');
+  if(hdr){
+    var setHdr = function(){
+      var y = window.pageYOffset || 0;
+      if(y > 24){ hdr.classList.add('compact'); } else if(y < 8){ hdr.classList.remove('compact'); }
+    };
+    window.addEventListener('scroll', setHdr, { passive:true });
+    setHdr();
+  }
+
+  /* ---------- logo del header ----------
+     Lleva al inicio y reproduce la pantalla de carga de los ojos.
+     Los demás enlaces navegan normal, sin animación. */
+  document.addEventListener('click', function(e){
+    if(e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey){ return; }
+    var a = e.target.closest ? e.target.closest('a[data-intro]') : null;
+    if(!a){ return; }
+    closeMenu();
+    if(typeof window.pochiIntro === 'function'){
+      e.preventDefault();
+      window.pochiIntro(); // ya estamos en el inicio: se reproduce aquí mismo
+    } else {
+      try{ sessionStorage.setItem('pochi_intro','1'); }catch(err){}
+    }
+  });
+
+  /* ---------- animación al hacer scroll ----------
+     Cada bloque .reveal aparece deslizándose hacia arriba al entrar en
+     la pantalla. Los que entran juntos salen uno tras otro. Si un
+     bloque vuelve a quedar por debajo de la pantalla, se "rearma" para
+     repetir la animación la próxima vez que se baje. */
+  var root = document.documentElement;
+  function startReveal(){
+    var items = [].slice.call(document.querySelectorAll('.reveal'));
+    if(!items.length){ return; }
+    if(!('IntersectionObserver' in window)){
+      items.forEach(function(el){ el.classList.add('in'); });
+      return;
+    }
+    /* de dónde entra cada bloque: los títulos desde la izquierda, lo que
+       ocupa media pantalla desde su lado, la línea del colegio desde
+       arriba y lo ancho desde abajo. Se puede forzar con data-from. */
+    var vw = window.innerWidth || 1;
+    items.forEach(function(el){
+      if(el.hasAttribute('data-from')){ return; }
+      var r = el.getBoundingClientRect(), from = 'bottom';
+      if(el.querySelector('.eyebrow, h1') && !el.classList.contains('card')){ from = 'left'; }
+      else if(el.classList.contains('school') || el.classList.contains('team-cta')){ from = 'top'; }
+      else if(r.width > 0 && r.width < vw * 0.6){ from = (r.left + r.width / 2) < vw / 2 ? 'left' : 'right'; }
+      el.setAttribute('data-from', from);
+    });
+    var io = new IntersectionObserver(function(entries){
+      var entering = [];
+      entries.forEach(function(en){
+        if(en.isIntersecting){ entering.push(en); }
+        else if(en.boundingClientRect.top > (en.rootBounds ? en.rootBounds.bottom : window.innerHeight)){
+          en.target.classList.remove('in'); // quedó abajo: se repetirá al volver
+        }
+      });
+      entering.sort(function(x, y){ return (x.boundingClientRect.top - y.boundingClientRect.top) || (x.boundingClientRect.left - y.boundingClientRect.left); });
+      entering.forEach(function(en, i){
+        if(en.target.classList.contains('in')){ return; }
+        en.target.style.setProperty('--rd', Math.min(i * 0.12, 0.6).toFixed(2) + 's');
+        en.target.classList.add('in');
+      });
+    }, { threshold:0.08, rootMargin:'0px 0px -6% 0px' });
+    items.forEach(function(el){ io.observe(el); });
+  }
+  if(root.classList.contains('play-intro')){
+    window.addEventListener('pochi:intro-fin', startReveal, { once:true });
+  } else {
+    startReveal();
+  }
+
+  /* ---------- reproductores de video (azul y blanco) ----------
+     <div class="player" data-src="Recursos/video.mp4" data-title="..."></div>
+     Controles: reproducir, barra de avance, tiempo, volumen, velocidad y
+     pantalla completa. En pantalla completa hay un botón "Salir" siempre a la
+     mano (también Esc). En iPhone, donde el navegador no deja poner en pantalla
+     completa la página, el video se amplía a toda la pantalla dentro de la web,
+     con los mismos controles y el mismo botón para salir.
+     Si el archivo todavía no está en Recursos/, se muestra cuál falta. */
+  var ICON_PLAY = '<svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>';
+  var ICON_PAUSE = '<svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>';
+  var ICON_FULL = '<svg class="i-full" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5v2H6v3zm10-5h6v5h-2V6h-4zM4 15h2v3h3v2H4zm14 3v-3h2v5h-5v-2z"/></svg>';
+  var ICON_MIN = '<svg class="i-min" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h2v5H4V7h3zm8 0h2v3h3v2h-5zM4 15h5v5H7v-3H4zm11 0h5v2h-3v3h-2z"/></svg>';
+  var ICON_VOL = '<svg class="i-vol" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>';
+  var ICON_MUTE = '<svg class="i-mute" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4zm12.3.3 1.4-1.4L20 10.2l2.3-2.3 1.4 1.4-2.3 2.3 2.3 2.3-1.4 1.4-2.3-2.3-2.3 2.3-1.4-1.4 2.3-2.3z"/></svg>';
+  var ICON_X = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6L6.4 19 5 17.6 10.6 12 5 6.4z"/></svg>';
+  var SPEEDS = [0.5, 0.75, 1, 1.25, 1.5, 2];
+  function fmt(s){ if(!isFinite(s)){ s = 0; } var m = Math.floor(s / 60), r = Math.floor(s % 60); return m + ':' + (r < 10 ? '0' : '') + r; }
+  function spd(x){ return String(x).replace('.', ',') + 'x'; }
+  // iPhone no permite cambiar el volumen desde la página (solo con los botones del teléfono)
+  var CAN_VOL = (function(){ try{ var t = document.createElement('video'); t.volume = 0.5; return t.volume === 0.5; }catch(e){ return false; } })();
+  var fsEl = function(){ return document.fullscreenElement || document.webkitFullscreenElement || null; };
+  var fsOK = !!(document.fullscreenEnabled || document.webkitFullscreenEnabled);
+
+  [].forEach.call(document.querySelectorAll('.player'), function(p){
+    var src = p.getAttribute('data-src') || '';
+    var poster = p.getAttribute('data-poster') || '';
+    var title = p.getAttribute('data-title') || 'Video';
+    var speedBtns = SPEEDS.map(function(s){
+      return '<button type="button" role="menuitemradio" data-speed="' + s + '"' + (s === 1 ? ' class="on" aria-checked="true"' : ' aria-checked="false"') + '>' + (s === 1 ? 'Normal' : spd(s)) + '</button>';
+    }).join('');
+    p.innerHTML =
+      '<video playsinline webkit-playsinline preload="metadata"></video>' +
+      '<button class="p-big" type="button" aria-label="Reproducir: ' + title + '">' + ICON_PLAY + '</button>' +
+      '<button class="p-close" type="button" aria-label="Salir de pantalla completa">' + ICON_X + '<span>Salir</span></button>' +
+      '<div class="p-bar">' +
+        '<button class="p-play" type="button" aria-label="Reproducir o pausar">' + ICON_PLAY + ICON_PAUSE + '</button>' +
+        '<div class="p-track" role="slider" tabindex="0" aria-label="Progreso del video" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div>' +
+        '<span class="p-time">0:00 / 0:00</span>' +
+        '<div class="p-vol">' +
+          '<button class="p-mute" type="button" aria-label="Silenciar">' + ICON_VOL + ICON_MUTE + '</button>' +
+          (CAN_VOL ? '<input class="p-volr" type="range" min="0" max="1" step="0.05" value="1" aria-label="Volumen">' : '') +
+        '</div>' +
+        '<div class="p-speed">' +
+          '<button class="p-spd" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Velocidad de reproducción">1x</button>' +
+        '</div>' +
+        '<button class="p-full" type="button" aria-label="Pantalla completa">' + ICON_FULL + ICON_MIN + '</button>' +
+      '</div>' +
+      '<div class="p-menu" role="menu" aria-label="Velocidad de reproducción"><span>Velocidad</span><div>' + speedBtns + '</div></div>' +
+      '<div class="p-missing"><div class="eyes eyes-md"><span class="eye"><i></i></span><span class="eye"><i></i></span></div>' +
+        '<strong>' + title + '</strong><span>Video pendiente, va en:</span><code>' + (src || 'Recursos/…') + '</code></div>';
+
+    var v = p.querySelector('video');
+    var fill = p.querySelector('.p-track i');
+    var track = p.querySelector('.p-track');
+    var time = p.querySelector('.p-time');
+    var muteBtn = p.querySelector('.p-mute');
+    var volR = p.querySelector('.p-volr');
+    var spdBtn = p.querySelector('.p-spd');
+    var menu = p.querySelector('.p-menu');
+    var fullBtn = p.querySelector('.p-full');
+    var markMissing = function(){ p.classList.add('missing'); };
+
+    if(!src){ markMissing(); return; }
+    if(poster){ v.setAttribute('poster', poster); }
+    var source = document.createElement('source');
+    source.src = src;
+    source.addEventListener('error', markMissing);
+    v.addEventListener('error', markMissing);
+    v.appendChild(source);
+
+    /* controles visibles / ocultos mientras se reproduce */
+    var idleT = 0;
+    var wake = function(){
+      p.classList.remove('idle');
+      clearTimeout(idleT);
+      idleT = setTimeout(function(){
+        if(!v.paused && !menu.classList.contains('open')){ p.classList.add('idle'); }
+      }, 2600);
+    };
+    var tapIdle = false;   // ¿los controles estaban ocultos al tocar la pantalla?
+    p.addEventListener('mousemove', wake);
+    p.addEventListener('touchstart', function(){ tapIdle = p.classList.contains('idle'); wake(); }, { passive:true });
+    p.addEventListener('keydown', wake);
+    p.addEventListener('mouseleave', function(){ if(!v.paused && !p.classList.contains('is-fs')){ clearTimeout(idleT); p.classList.add('idle'); } });
+
+    var play = function(){ var pr = v.play(); if(pr && pr.catch){ pr.catch(function(){}); } };
+    var toggle = function(){ if(v.paused){ play(); } else { v.pause(); } };
+    p.querySelector('.p-big').addEventListener('click', toggle);
+    p.querySelector('.p-play').addEventListener('click', toggle);
+    var lastTouch = 0;
+    v.addEventListener('touchend', function(){ lastTouch = Date.now(); }, { passive:true });
+    v.addEventListener('click', function(){
+      // en pantallas táctiles, si los controles estaban ocultos el toque solo los muestra
+      if(Date.now() - lastTouch < 600 && tapIdle){ tapIdle = false; wake(); return; }
+      toggle();
+    });
+    v.addEventListener('dblclick', function(){ setFull(!p.classList.contains('is-fs')); });
+    v.addEventListener('play', function(){ p.classList.add('playing'); wake(); });
+    v.addEventListener('pause', function(){ p.classList.remove('playing'); p.classList.remove('idle'); });
+    v.addEventListener('ended', function(){ p.classList.remove('playing'); p.classList.remove('idle'); });
+    var paint = function(){
+      var pct = v.duration ? (v.currentTime / v.duration) * 100 : 0;
+      fill.style.width = pct + '%';
+      track.setAttribute('aria-valuenow', Math.round(pct));
+      time.textContent = fmt(v.currentTime) + ' / ' + fmt(v.duration);
+    };
+    v.addEventListener('timeupdate', paint);
+    v.addEventListener('loadedmetadata', paint);
+
+    /* barra de avance: clic o arrastre (mouse y dedo) */
+    var seekTo = function(x){
+      var r = track.getBoundingClientRect();
+      if(v.duration){ v.currentTime = Math.max(0, Math.min(1, (x - r.left) / r.width)) * v.duration; paint(); }
+    };
+    var dragging = false;
+    track.addEventListener('pointerdown', function(e){ dragging = true; try{ track.setPointerCapture(e.pointerId); }catch(err){} seekTo(e.clientX); e.preventDefault(); });
+    track.addEventListener('pointermove', function(e){ if(dragging){ seekTo(e.clientX); } });
+    var endDrag = function(){ dragging = false; };
+    track.addEventListener('pointerup', endDrag);
+    track.addEventListener('pointercancel', endDrag);
+    track.addEventListener('keydown', function(e){
+      if(!v.duration){ return; }
+      if(e.key === 'ArrowRight'){ v.currentTime = Math.min(v.duration, v.currentTime + 5); e.preventDefault(); }
+      if(e.key === 'ArrowLeft'){ v.currentTime = Math.max(0, v.currentTime - 5); e.preventDefault(); }
+    });
+
+    /* volumen */
+    var paintVol = function(){
+      var off = v.muted || v.volume === 0;
+      p.classList.toggle('muted', off);
+      muteBtn.setAttribute('aria-label', off ? 'Activar sonido' : 'Silenciar');
+      if(volR){ volR.value = off ? 0 : v.volume; volR.style.setProperty('--v', (off ? 0 : v.volume) * 100 + '%'); }
+    };
+    muteBtn.addEventListener('click', function(){
+      if(v.muted || v.volume === 0){ v.muted = false; if(v.volume === 0){ v.volume = 1; } }
+      else { v.muted = true; }
+      paintVol();
+    });
+    if(volR){
+      volR.addEventListener('input', function(){ v.volume = parseFloat(volR.value); v.muted = v.volume === 0; paintVol(); });
+    }
+    v.addEventListener('volumechange', paintVol);
+    paintVol();
+
+    /* velocidad */
+    var closeMenu = function(){ menu.classList.remove('open'); p.classList.remove('menu-open'); spdBtn.setAttribute('aria-expanded', 'false'); };
+    spdBtn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var open = !menu.classList.contains('open');
+      menu.classList.toggle('open', open);
+      p.classList.toggle('menu-open', open);
+      spdBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      wake();
+    });
+    [].forEach.call(menu.querySelectorAll('button'), function(b){
+      b.addEventListener('click', function(e){
+        e.stopPropagation();
+        var s = parseFloat(b.getAttribute('data-speed'));
+        v.playbackRate = s; v.defaultPlaybackRate = s;
+        spdBtn.textContent = spd(s);
+        p.classList.toggle('fast', s !== 1);
+        [].forEach.call(menu.querySelectorAll('button'), function(o){ var on = o === b; o.classList.toggle('on', on); o.setAttribute('aria-checked', on ? 'true' : 'false'); });
+        closeMenu(); wake();
+      });
+    });
+    document.addEventListener('click', function(e){ if(!menu.contains(e.target) && e.target !== spdBtn){ closeMenu(); } });
+
+    /* pantalla completa: real cuando el navegador lo permite; si no (iPhone),
+       el video ocupa toda la pantalla dentro de la página. Siempre se puede salir. */
+    var holder = null, pseudo = false, keepY = null;
+    // al salir, la página vuelve exactamente al mismo punto donde estaba
+    var restoreY = function(){
+      if(keepY === null){ return; }
+      var y = keepY; keepY = null;
+      var go = function(){ try{ window.scrollTo({ top:y, left:0, behavior:'instant' }); }catch(e){ window.scrollTo(0, y); } };
+      go(); requestAnimationFrame(go); setTimeout(go, 120); setTimeout(go, 350);
+    };
+    var mark = function(on){
+      p.classList.toggle('is-fs', on);
+      fullBtn.setAttribute('aria-label', on ? 'Salir de pantalla completa' : 'Pantalla completa');
+      wake();
+    };
+    var enterPseudo = function(){
+      var was = !v.paused;
+      holder = document.createElement('div');
+      holder.className = 'p-holder';
+      holder.style.height = p.offsetHeight + 'px';
+      p.parentNode.insertBefore(holder, p);
+      document.body.appendChild(p);           // fuera de contenedores con animación
+      p.classList.add('p-fs');
+      document.documentElement.classList.add('p-lock');
+      pseudo = true; mark(true);
+      if(was && v.paused){ play(); }
+      p.querySelector('.p-close').focus({ preventScroll:true });
+    };
+    var exitPseudo = function(){
+      if(!pseudo){ return; }
+      var was = !v.paused;
+      p.classList.remove('p-fs');
+      document.documentElement.classList.remove('p-lock');
+      if(holder && holder.parentNode){ holder.parentNode.replaceChild(p, holder); }
+      holder = null; pseudo = false; mark(false); restoreY();
+      if(was && v.paused){ play(); }
+    };
+    var setFull = function(on){
+      closeMenu();
+      if(on){
+        keepY = window.pageYOffset;
+        if(fsOK && (p.requestFullscreen || p.webkitRequestFullscreen)){
+          try{
+            var r = (p.requestFullscreen || p.webkitRequestFullscreen).call(p);
+            if(r && r.catch){ r.catch(enterPseudo); }
+          }catch(err){ enterPseudo(); }
+        } else { enterPseudo(); }
+      } else {
+        if(pseudo){ exitPseudo(); return; }
+        if(fsEl()){
+          try{ var x = (document.exitFullscreen || document.webkitExitFullscreen).call(document); if(x && x.catch){ x.catch(function(){}); } }catch(err){}
+        }
+        mark(false);
+      }
+    };
+    fullBtn.addEventListener('click', function(){ setFull(!p.classList.contains('is-fs')); });
+    p.querySelector('.p-close').addEventListener('click', function(){ setFull(false); });
+    var onFs = function(){ if(!pseudo){ var on = fsEl() === p; mark(on); if(!on){ restoreY(); } } };
+    document.addEventListener('fullscreenchange', onFs);
+    document.addEventListener('webkitfullscreenchange', onFs);
+    // si iOS abre su propio reproductor, al cerrarlo todo queda como estaba
+    v.addEventListener('webkitendfullscreen', function(){ mark(false); restoreY(); });
+    document.addEventListener('keydown', function(e){
+      if(!pseudo){ return; }
+      if(e.key === 'Escape'){ exitPseudo(); }
+      else if(e.key === ' ' && e.target.tagName !== 'BUTTON' && e.target.tagName !== 'INPUT'){ toggle(); e.preventDefault(); }
+    });
+    // en el modo amplio de iPhone, la página de fondo no se desplaza
+    p.addEventListener('touchmove', function(e){ if(pseudo && !track.contains(e.target) && e.target !== volR){ e.preventDefault(); } }, { passive:false });
+    window.addEventListener('orientationchange', function(){ if(pseudo){ wake(); } });
+
+    /* reproductores angostos (video vertical en teléfono): barra compacta */
+    var fit = function(){ var w = p.clientWidth; p.classList.toggle('p-narrow', w < 360); p.classList.toggle('p-tiny', w < 250); };
+    if(window.ResizeObserver){ new ResizeObserver(fit).observe(p); } else { window.addEventListener('resize', fit); }
+    fit();
+  });
+})();
+
+</script>
+
+</body>
+</html>
